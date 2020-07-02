@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCamp.BlackJack.ConsoleApp", "CodeCamp.BlackJack.ConsoleApp\CodeCamp.BlackJack.ConsoleApp.csproj", "{EE7513BD-C885-48CA-AED0-9904392A9217}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCamp.Blackjack.Tests", "CodeCamp.Blackjack.Tests\CodeCamp.Blackjack.Tests.csproj", "{DFB30C12-4D24-4E8B-B2D5-2A569D1FA63B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE7513BD-C885-48CA-AED0-9904392A9217}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE7513BD-C885-48CA-AED0-9904392A9217}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE7513BD-C885-48CA-AED0-9904392A9217}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE7513BD-C885-48CA-AED0-9904392A9217}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFB30C12-4D24-4E8B-B2D5-2A569D1FA63B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFB30C12-4D24-4E8B-B2D5-2A569D1FA63B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFB30C12-4D24-4E8B-B2D5-2A569D1FA63B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFB30C12-4D24-4E8B-B2D5-2A569D1FA63B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB5AFC73-C1A3-4193-801D-AD9F3DCF8077}
+	EndGlobalSection
+EndGlobal
