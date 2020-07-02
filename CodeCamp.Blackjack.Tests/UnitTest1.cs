@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System;
 
 namespace CodeCamp.Blackjack.Tests
 {
@@ -20,7 +21,7 @@ namespace CodeCamp.Blackjack.Tests
         }
 
         [Test]
-        public void Test()
+        public void AddingSecondPlayer()
         {
             var game = new Game();
             Player player = new Player();
@@ -31,5 +32,26 @@ namespace CodeCamp.Blackjack.Tests
             game.AddPlayer(player2);
             Assert.AreEqual(2, game.NumberOfPlayers);
         }
-    }
+        [Test]
+        public void AddingSamePlayerTwice()
+        {
+            var game = new Game();
+            Player player = new Player();
+            player.Name = "Insiya";
+            game.AddPlayer(player);
+         
+
+            try {
+                game.AddPlayer(player);
+                Assert.Fail("Should not add same player twice.");
+            }
+            catch (Exception e)
+            {
+                Assert.AreEqual("Player already exists.", e.Message);
+
+            }
+        }
+
+
+}
 }
