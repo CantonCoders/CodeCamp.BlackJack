@@ -1,0 +1,353 @@
+﻿Values of the Cards
+In blackjack, the cards are valued as follows:
+
+An Ace can count as either 1 or 11, as explained below.
+The cards from 2 through 9 are valued at their face value.
+The 10, Jack, Queen, and King are all valued at 10.
+The suits of the cards do not have any meaning in the game. 
+The value of a hand is simply the sum of the point counts of each card in the hand. Some examples:
+
+Five of Clubs Seven of Hearts Nine of Diamonds
+
+5 + 7 + 9 = 21, so this hand has a value of 21.
+
+Jack of Diamonds Ten of Spades
+
+10 + 10 = 20, so this hand has a value of 20.
+
+Nine of Spades Three of Spades Queen of Hearts
+
+9 + 3 + 10 = 22, so this hand is a "bust". Any hand that goes over 21 "breaks", or is "busted", and is an automatic loser.
+
+Pretty easy, eh?
+
+The Ace adds a new twist…
+
+An Ace can be counted as either 1 or 11. You need not specify which value the Ace has. It is assumed to have the value that makes the best hand, and that may change as more cards are added to the hand.
+
+Ace of Clubs Six of Diamonds
+
+This hand is valued at 7 or 17, also known as a "soft" 17.
+
+A soft hand is any hand where an Ace can be counted as either 1 or 11 without going over 21. The name reflects the fact that the hand can't break if you draw another card. It's "soft".
+
+Let's draw another card:
+
+Ace of Clubs Six of Diamonds King of Spades
+
+Now our hand is 17, since 1 + 6 + 10 = 17. We no longer have the option to count the Ace as 11, because that would go over 21. (This hand is now a hard 17, despite having an Ace in it.)
+
+Let's back up, and draw a different card instead:
+
+Ace of Clubs Six of Diamonds Three of Diamonds
+
+Now our hand is "10 or 20", a soft 20. Twenty is a great hand, so we would stop there.
+
+The Deal of the Cards
+Once all the bets are placed, the dealer will deal the cards to the players. He will make two passes around the table starting at his left (your right) so that the players and the dealer all have two cards each. The dealer will flip one of his cards over, exposing its value as the "dealer upcard".
+
+(In some parts of the world, the dealer may get only one card. I'll cover that in a moment.)
+
+In games dealt from a shoe, the players' cards will be face-up, and players are not allowed to touch the cards. If you are just beginning, this is the best kind of game, because you don't have to worry about handling the cards.
+
+Hand-held games are slightly different. In these games, the players' cards are dealt face down, and players pick up the cards. When handling the cards in a hand-held game, here are a few important things to remember.
+
+You must only touch the cards with one hand. If you are a poker player, this can take some effort to break old habits!
+You must keep the cards over the table. Don't pull them close to your body.
+Any cards that the dealer subsequently deals to your hand are left on the table, not added to the cards you are holding.
+Once the initial hands are dealt, play proceeds around the table starting at the first seat to the dealer's left, also called "first base". Each player in turn indicates to the dealer how he wishes to play the hand. (All of those choices are explained in the next part of this series.)
+
+After all of the players have finished their hands, the dealer will complete his hand, and then pay the winning bets and collect the losing bets.
+
+How the Dealer Plays His Hand
+The dealer will first flip over the "hole card" to reveal his two-card starting hand. The dealer is then required to play his hand in a very specific way, with no choices allowed.
+
+He must draw cards until he has a total of 17 or more. The dealer has no choice in how to play the hand. He must continue taking cards until his total is at least 17. (A slight variation of this rule is discussed below.)
+
+Let's look at one possible dealer hand:
+
+Ace of Clubs Five of Hearts Seven of Diamonds Six of Clubs
+
+After flipping over the hole card, the dealer's hand was (Ace, 5). That makes a hand value of 16, so he must draw another card.
+
+He drew a 7, making the hand value 13 (the Ace can no longer be counted as 11). With a total of 13, he must hit again.
+
+He drew a 6, making the hand total 19. Since that is "17 or more", the dealer stops with a final total of 19.
+
+Wins, Losses, and Ties
+Once the hand is over, how does the dealer decide which bets to pay, and which bets to collect?
+
+If you draw a card that makes your hand total go over 21, your hand is a bust. That is an automatic loser. The dealer will immediately collect your bet, and discard your hand.
+
+Assuming you did not bust, the dealer will play out his hand at the end. If he busts by going over 21, all the remaining players win their bets.
+
+If neither you nor the dealer busted, now the dealer will compare his final total to yours.
+
+If his total is higher than yours, you lose the bet, and he will collect your bet and put the chips in his tray.
+
+If your total is higher than his, you win the bet, and he will pay the entire amount you have bet. After he pays you, you'll have your initial bet plus the amount you won in the circle.
+
+So, what happens if you and the dealer tie, with the same exact total? Nothing at all. A tie is called a "push", and you do not win or lose your bet. Your chips stay in the betting circle where you can leave them for the next hand if you want, or you can add to or remove from them as you wish before the next hand.
+
+What is a Blackjack, or Natural?
+A blackjack, or natural, is a total of 21 in your first two cards. A blackjack is therefore an Ace and any ten-valued card, with the additional requirement that these be your first two cards. If you split a pair of Aces for example, and then draw a ten-valued card on one of the Aces, this is not a blackjack, but rather a total of 21.
+
+The distinction is important, because a winning blackjack pays the player at 3 to 2. A bet of $10 wins $15 if the player draws a blackjack. A player blackjack beats any dealer total other than blackjack, including a dealer's three or more card 21. If both a player and the dealer have blackjack, the hand is a tie or push.
+
+The dealer will usually pay your winning blackjack bet immediately when it is your turn to play. In the face down games, this means that you should show the blackjack to the dealer at that time. Some casinos may postpone paying the blackjack until after the hand is over if the dealer has a 10 card up and has not checked for a dealer blackjack. Other casinos check under both 10 and Ace dealer upcards, and would therefore pay the blackjack immediately.
+
+Regardless, when you are dealt a blackjack, turn the cards face up, and smile. It only happens about once every 21 hands, but it accounts for a lot of the fun of the game.
+
+Part 2 – Player Choices
+Hitting and Standing
+The most common decision a player must make during the game is whether to draw another card to the hand ("hit"), or stop at the current total ("stand").
+
+You will be required to make hand signals rather than just announcing "hit" or "stand" to the dealer. This is to eliminate any confusion or ambiguity in what you choose, and also for the benefit of the ever-present surveillance cameras. If you go over 21, or "bust", the dealer will collect your bet and remove your cards from the table immediately.
+
+How you signal your intention to the dealer depends on which style of game you are playing:
+
+Hand Signals in the Shoe Game
+In the face-up shoe game, you indicate that you want another card by tapping the table behind your cards with a finger.
+
+When you decide to stand, just wave your hand in a horizontal motion over your cards.
+
+Remember that you are not allowed to touch the cards in this style of game.
+
+Hand Signals in the Hand-Held Game
+In the face-down game, things are a little different. You will hold the first two cards with one hand.
+
+To let the dealer know that you want to draw another card to your hand, scratch the table with the bottom of your cards lightly. Watch another player at first to see how this works. The dealer will deal your additional cards on the table in front of your bet. Leave those cards on the table, but mentally add them to your total hand value. If you go over 21, just toss the two cards in your hand face up on the table. The dealer will collect your bet and discard your hand.
+
+When you decide to stand, tuck the two cards you are holding face-down under the chips in your betting circle. This can be a bit tricky the first few times. Don't pick up the bet to place the cards underneath. Remember, once the cards are dealt, you can't touch the chips in the circle. Simply slide the corner of the cards under the chips.
+
+Describing these moves makes them sound complicated. They're not. Just pay attention to what other players are doing and you will fit right in.
+
+Doubling Down
+Much of the excitement and profit in blackjack comes from hands where you are able to "double down". This option is available only with a two card hand, before another card has been drawn. Doubling down allows you to double your bet and receive one (and only one) additional card to your hand.
+
+A good example of a doubling opportunity is when you hold a total of 11, like a (6,5) against a dealer's upcard of 5. In this case, you have a good chance of winning the hand by drawing one additional card, so you should increase your bet in this advantageous situation by doubling down.
+
+If you are playing in a hand-held game, just toss your original two cards face-up on the table in front of your bet.
+
+In either type of game, add an additional bet to the betting circle. Place the additional bet adjacent to the original bet, not on top of it.
+
+The dealer will deal one additional card to the hand. In a shoe game, he will probably deal the card sideways to indicate that this was a double-down. In a hand-held game, the card will be tucked face-down under your bet to be revealed after the hand is over. Depending on what the dealer makes on his hand, it can be an exciting wait to see that card revealed at the end!
+
+You are allowed to double down for any amount up to your original bet amount, so you could actually double down for less if you wanted. That's a bad move though. Remember that you do give up something for being allowed to increase your bet: the ability to draw more than one additional card. If the correct play is to double down, you should always double for the full amount if possible.
+
+And just when should you double down, you ask? For that information, just use our Blackjack Basic Strategy Engine.
+
+Splitting Pairs
+When you are dealt a pair of cards of the same rank, you are allowed to split the pair into two separate hands and play them independently. Let's say you are dealt a pair of eights for a total of sixteen. Sixteen is the worst possible player hand, since it is unlikely to win as is, but is very likely to bust if you draw to it. Here's a great chance to improve a bad situation.
+
+If you are playing a hand-held game, toss the cards face-up in front of your bet just like a double down. Then, in either type of game, place a matching bet beside the original bet in the circle. Note that you must bet the same amount on a split, unlike a double-down where you are allowed to double for less.
+
+The dealer will separate the two cards, and treat them as two independent hands. He will deal a second card on the first eight, and you will play that two-card hand to completion. (Many casinos will let you double-down on that two-card hand if you want. I will discuss the "Double After Split" option in Rule Variations.)
+
+No matter what happens on your first hand, when you are done with it the dealer will deal a second card to your next hand and the process starts all over.
+
+Resplitting
+If you get additional pairs in the first two cards of a hand, most casinos will allow you to resplit, making yet another hand. Typically a player is allowed to split up to 3 times, making 4 separate hands, with 4 separate bets. If double after split is allowed, you could have up to 8 times your initial bet on the table!
+
+Splitting Tens
+Note that you are allowed to split any 10-valued cards, so you could split a (Jack, Queen) hand. However, this is usually a bad play. Keep the 20. You will make more money on the pat 20 than you will trying to make two good hands from it.
+
+Not convinced? I wrote a post about just that: Why Splitting Tens is a Bad Move.
+
+Splitting Aces
+Another oddity comes when splitting Aces. Splitting Aces is a very strong player move so the casino limits you to drawing only one additional card on each Ace. Also, if you draw a ten-valued card on one of your split Aces, the hand is not considered a Blackjack, but is instead treated as a normal 21, and therefore does not collect a 3:2 payoff.
+
+Some casinos allow resplitting Aces if you draw another, but many do not.
+
+With all these limitations, you may wonder whether it makes sense to split Aces.
+The answer is a resounding YES. Always split Aces.
+
+For accurate advice on what other pairs you should split, consult the Blackjack Basic Strategy Engine.
+
+Part 3 – Basic Strategy
+If you want to win at Blackjack, you will eventually need to learn basic strategy from a basic strategy chart or play the interactive strategy trainer. However, there are some quick rules and tips that you can learn as a beginner to decrease the house edge and formulate a strategy.
+
+When to Hit or Stand in Blackjack
+1: Never hit a hard 17 or above.
+2: Never stand on an 11 or lower.
+3: Never hit a 12-16 against a dealer 4, 5 or ,6.
+3: Always hit a 12-16 against a dealer 7 or higher.
+4: Always hit on soft 17 or less.
+When to Double in Blackjack
+Remember there are more 10 value cards (10, J, Q, K) than any other cards in the deck—so when a 10 will get you close to 21 and you are against a card that is bad for the dealer, you should double. A player 9, 10, or 11 would always be a good double when a dealer is showing a 3, 4, 5, or 6. This is because the 3, 4, 5, and 6 are starting cards that are more likely to make a dealer bust.
+
+1: Always double a 9 against a 3, 4, 5, or 6.
+2: Always double a 10 against any dealer card other than a 10 or Ace.
+3: Always double an 11 against any dealer card other than an Ace.
+3: Always double a soft 18 or below against a 5 or 6.
+When to Split in Blackjack
+1: Always split Aces and 8’s.
+The Ace is such a powerful card because pulling a 10 on a split will give you a 21. Even though a 21 gained through a split is still only paid 1:1, it is a very advantageous situation. Splitting 8’s is important because it rids you of a 16—the worst hand in Blackjack.
+
+2: Never split Fives or Faces.
+Two fives total 10—which is a hand much better suited for doubling. Face cards or 10’s should not be split because they already total 20, which is a great hand on its own.
+
+Part 4 – Insurance and Surrender
+Insurance
+Insurance in blackjack is often misunderstood by players, and is a big money-maker for casinos. Naming this side-bet "insurance" was a brilliant marketing ploy, and some otherwise solid players will frequently make this bad bet to "insure" when they have a good hand. But actually, insurance is not always a bad bet. For players who can recognize when the remaining deck is rich in ten-valued cards, this can actually be a profitable side-bet.
+
+So, what exactly is "insurance" in blackjack anyway?
+
+Insurance is a proposition bet that is available only when the dealer's upcard is an Ace.
+
+When the dealer turns up an Ace, he will offer "Insurance" to the players. Insurance bets can be made by betting up to half your original bet amount in the insurance betting stripe in front of your bet.
+
+The dealer will check to see if he has a 10-value card underneath his Ace, and if he does have Blackjack, your winning Insurance bet will be paid at odds of 2:1. You will still lose your original bet (unless you also have a Blackjack), so the net effect is that you break even (assuming you bet the full half bet for insurance.) This is why the bet is described as "insurance", since it seems to protect your original bet against a dealer blackjack. Of course, if the dealer does not have blackjack, you'll lose the insurance bet, and still have to play the original bet out.
+
+Insurance is simply a side-bet offering 2:1 odds that the dealer has a 10-valued card underneath their Ace. Not surprisingly, the casino has a substantial edge on this bet. In a single deck game, there are 16 ten-valued cards. Assuming that you don't see any other cards, including your own, the tens compose 16 out of 51 remaining cards after the dealer's Ace was removed. For the insurance bet to be a break-even bet, the hole card would have to be a ten 1 out of 3 times, but 16/51 is only 1 in 3.1875.
+
+That creates a 5.88% house edge on the insurance bet in single deck. It's even worse in six decks with a 7.40% house edge.
+
+Card counters can still beat the insurance bet, by only making the bet when they know that more than one-third of the remaining cards are tens.
+
+Unless you are card counter and know the deck is skewed sufficiently, just ignore the insurance bet. It doesn't matter whether you have a good hand or a bad hand.
+
+Taking "Even Money" on Blackjack
+If you have a blackjack when the dealer turns up an Ace, he is likely to offer you "even money" instead of the insurance bet. If you accept, the dealer will pay you the amount of your original bet and discard your hand of blackjack, before he even checks under his Ace to see if he has a blackjack as well.
+
+Many players think this sounds like a good deal, guaranteeing a profit even if the dealer has a blackjack. But that guaranteed profit comes at a price. You will win more money in the long run by holding out for the full $15 payout when the dealer does not have blackjack, even though you will sometimes end up empty-handed.
+
+"Even money" is nothing but an insurance bet on your blackjack, nothing more and nothing less. Let me show you how it works:
+
+Let's say you bet $10, and have a Blackjack. You would normally collect $15 for this, unless the dealer also has a blackjack in which case you push or tie. Let's assume that the dealer has an Ace up, and you decide to take insurance for the full amount allowed of $5.
+
+Now, two things can happen:
+
+The dealer has a Blackjack. You tie with the $10, but collect 2:1 on the $5 insurance bet for a total profit of $10.
+The dealer does not have Blackjack. You lose the $5 insurance bet, but collect $15 for your blackjack. Your total profit is again $10.
+In either case, once you make the insurance bet you are guaranteed a profit of $10, which is an even money payout for your original bet. So, casinos allow you to eliminate the insurance bet altogether, and simply declare that you want "even money" for your blackjack when the dealer has an Ace showing.
+
+The problem is that you are still making a bad bet on insurance, which costs you money. If you ignore the offer of even money, sometimes you get $15, and sometimes you get $0. But on average, you will collect slightly more than the $10 you are offered for even money.
+
+A player who does not count cards should simply never take the insurance bet, even the "even money" variety.
+
+Surrender
+Some games offer the player a chance to fold their hand, and forfeit half of their bet. This surrender option must be done as the very first action the player takes on the hand. In other words, you can't draw a card and then decide to bail out!
+
+Even when surrender is available, it is rarely used by players. Often, the rules posted at the table won't mention it even if the casino allows it. And many players just don't like the idea of surrendering a hand. But for a smart player, it is a useful option, and reduces the house advantage by about 0.08%.
+
+When surrender is available, make sure you know the correct strategy for using it. Most players who use the option surrender too many hands. If your game offers surrender, I recommend reading my complete explanation of blackjack surrender.
+
+In the most common variety (known as "late" surrender), a player cannot surrender until after the dealer has checked for blackjack. If the dealer has blackjack, you will lose your entire bet with no chance of surrendering for half the cost.
+
+Part 5 – Rule Variations
+There are a few rules in blackjack that can vary slightly from casino to casino.
+
+Dealer Hits Soft 17
+Generally, the dealer in blackjack must hit if he has a total of 16 or less, and stand if he has 17 or more.
+
+But at some games there is an exception when the dealer has a hand of "soft" 17.
+
+If you look at the table, you will see one of two phrases on the felt:
+
+Dealer Stands on All 17s: This is the simple version. The dealer will stand with any total of 17 or more, whether that total is "soft" or not. (This rule is abbreviated S17. The S is for Stand, not Soft!)
+Dealer Hits Soft 17: In casinos with this rule, the dealer will stand with any hard 17, but draw another card if he has a soft 17, such as (Ace, 2, 4). (This rule is abbreviated H17.)
+Seventeen is a weak hand, so if the dealer is allowed to try to improve the soft 17 hands, it makes the game tougher. When a dealer is allowed to hit soft 17, it adds about 0.2% to the house advantage.
+
+Years ago, the only "Hit Soft 17" games in the US were in and around Reno, Nevada. Almost all other areas used the better rule of standing on all 17s. Over the years, more and more casinos have switched to hitting soft 17, and there are now far more H17 games than S17 games.
+
+You can still find some games where the dealer stands on all 17s, even in casinos where some of the tables use the H17 rule. Look around!
+
+Double After Split
+After splitting a pair, many casinos will allow you to double-down on a two-card hand that arises as a result of the split. For example, if you split a pair of eights, and draw a 3 on the first hand, it is valuable to be able to double-down on the resulting hand of 11.
+
+This rule is fairly common, and it helps the player by about 0.12%.
+
+Resplitting Aces
+As mentioned in the previous section discussion on pair splitting, there are several common restrictions on splitting Aces. You will receive only one card on each Ace after splitting.
+
+Some casinos will allow you to resplit if you draw another Ace, and some will not. That's true even if the casino allows resplits of all other pairs.
+
+When the casino does allow resplitting of Aces, it helps the player by about 0.08%.
+
+This rule is rarely posted at the table. If you are curious, you will need to ask the dealer.
+
+Peek or No-Peek, Hole Card or No Hole Card
+Many casinos in Europe, and some in other parts of the world, handle the dealer's second card differently. In these "European No Hole Card" games, the dealer only deals himself one card at the beginning of the round. After all the players have completed their hands, he deals his own second card and completes the hand.
+
+Contrast that with the normal US style of play. There, if the dealer has a ten or Ace card up, he checks the other card immediately to see if he has a blackjack. If he does, the hand is over. This process of "peeking" under the hole card to check for blackjack means that players can only lose one bet per hand if the dealer has a blackjack.
+
+In a No-Hole-Card game, a player might split or double and have multiple bets at risk to a dealer blackjack, because the dealer cannot check ahead of time. This changes the optimal strategy, and means that players should usually not split or double against a dealer ten or Ace upcard. (An exception is splitting Aces against a dealer ten.)
+
+Note that there are a few no-hole-card games where the rules specifically say that only one bet will be collected from a player if the dealer has a blackjack. In those games, although there is no hole card, you can play the game as if there were. (That means you should play it as a Peek game, even though there's not really a peek!) It's all a bit confusing.
+
+When the No-Hole-Card rule is in use, and all bets are at risk to a dealer blackjack, it costs the player 0.11%, and players should revise their strategy appropriately. (Use the "No-Peek" option at our Strategy Engine.)
+
+The Five Card Charlie
+Ok this one's an extremely rare variation which I doubt you will see in any casinos today but I thought I'd mention. If the player draws 5 cards and doesn't bust then he/she automatically wins the hand (this is called a "Charlie").
+
+Similarly there is a rule variation whereby the player automatically wins when drawing 7 cards without busting which is called a "Seven Card Charlie".
+
+Part 6 – Playing at the Casino Basics
+Choosing a Table at the Casino
+If you are new to the game, there are a few items you should notice when looking for a game…
+
+The most important item is the sign declaring betting limits. If you are reading this, you probably don't want to sit down at a table that requires a $100 minimum bet! Both the minimum and the maximum allowable bets should be on a sign on the table-top. Look around to find a table that suits your bet sizes.
+
+Make sure that the table you have selected is actually for blackjack, and not another of the many kinds of table games that casinos offer. Look on the table for the phrase " Blackjack pays 3 to 2". Avoid any games that say " Blackjack pays 6 to 5" instead. (See 6 to 5 Blackjack? Just Say No!.)
+
+Next, take a look at how the game is being dealt. There are two different dealing styles:
+
+Shoe games: The dealer distributes cards from a dealing shoe and the player cards are all dealt face-up. These games typically use 6 or 8 decks of cards.
+Hand-held games: The dealer holds the cards in his hand and usually deals the player cards face-down. These games typically use 1 or 2 decks of cards.
+Beginners should start off playing the shoe games. The advantage in this style is that all of the players' cards are dealt face-up, so the dealer and other players can easily help you with playing questions and decisions. Once you become proficient at the game, you may want to switch to a game with fewer decks since that lowers the casino's advantage.
+
+Buying Chips
+To play the game, you will need to exchange some cash for chips from the dealer.
+
+Wait for a break in the action, and place your cash out in front of you on the table felt.
+
+A few points of etiquette apply here:
+
+Don't try to hand your money to the dealer. For security reasons, he can't take anything from your hands. Just lay it on the table instead.
+Don't put it into the betting circle, as some casinos will allow cash bets, and the dealer may think you want to bet it all!
+Buy in for at least enough cash to play several hands. A typical $5 player might buy in for $40 or so.
+The dealer will exchange the entire amount of cash for the equivalent in chips, and drop the cash into a box on the table.
+
+Take a quick look at the chips to make sure you know the value of each color. Common chip colors are red for $5, green for $25, and black for $100.
+
+If you have any questions, just ask the dealer. Part of his job is to help players learn the game.
+
+Placing a Bet
+Once you are ready to place a bet, wait for the current hand to be completed, then push your bet into the betting circle.
+
+Your chips should be in one stack. If you are betting multiple denominations of chips, place the larger valued chips on the bottom of the stack, and the smaller value chips on top.
+
+Once the cards have been dealt, you are not allowed to touch the bet in the circle. If you need to know how much you have bet for doubling or splitting (explained later), the dealer will count down the chips for you.
+
+Once the hand is over, the dealer will move around the table to each position in turn, paying winning hands and collecting the chips from losing hands. After the dealer has paid you, you can remove your chips from the circle, and place your next bet.
+
+If you want to let your winnings ride, you will need to form one stack of chips from the two or more stacks on the table after the dealer pays you. Remember, higher value chips should be placed on the bottom of the stack.
+
+Cashing Your Chips
+When you are ready to leave the table, you do not cash in your chips the same way you bought them. The dealer cannot give you cash for the chips at the table. To do that, you must take the chips to the casino cashier.
+
+If you have a lot of low denomination chips in front of you at the table, you should trade them for the equivalent higher value chips instead. In between hands, just tell the dealer you want to "color up", and he will have you push your chips into the middle of the table. He will count them down, and give you a smaller stack of chips that amount to the same value. This makes them easier to carry for you, and for the dealer it maintains his supply of smaller chips.
+
+Now you can take those chips to another table for more play, or head to the casino cashier where you can exchange them for cash.
+
+FAQ
+Do the suits of the cards make a difference?
+
+Is counting cards legal?
+
+What's Next
+So, if you have made it this far, congratulations. You should have a good idea of what to expect when you sit down at a blackjack table in the casino.
+
+What we have not talked about is how to actually make the best decisions while playing the game. That is a whole subject all its own. To have the best chance of winning, you should learn and practice "basic strategy", which is the mathematically best way to play each hand against each possible dealer upcard.
+
+For a free chart that shows the right play in every case, visit our Blackjack Basic Strategy Engine.
+
+You're well on your way.
+
+Play Online for Real Money
+If you are looking to play from the comfort of your home, you can visit our online blackjack or live dealer blackjack sections for further resources.
+
+Hopefully I've covered just about everything you need. But if you have other questions, feel free to post a reply at the bottom of the page.
+
+While you are here, check out some of our most popular features:
