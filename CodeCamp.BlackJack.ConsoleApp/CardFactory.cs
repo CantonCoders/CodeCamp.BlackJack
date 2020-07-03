@@ -11,9 +11,9 @@ namespace CodeCamp.Blackjack.ConsoleApp
 
             foreach(Suit suit in Enum.GetValues(typeof(Suit)))
             {
-                for(var i = 0; i < 13; i++)
+                foreach(CardName cardName in Enum.GetValues(typeof(CardName)))
                 {
-                    deck.Add(new Card(suit));         
+                    deck.Add(new Card(suit, cardName));         
                 }
             }
 
