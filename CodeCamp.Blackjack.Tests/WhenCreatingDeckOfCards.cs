@@ -40,7 +40,7 @@ namespace CodeCamp.Blackjack.Tests
         }
 
         [Test]
-        public void test()
+        public void EachSuitContainsOneOfEachCardName()
         {
             AssetCardsInSuit(Suit.Clubs);
             AssetCardsInSuit(Suit.Diamonds);
