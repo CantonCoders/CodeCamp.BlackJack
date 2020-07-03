@@ -71,5 +71,15 @@ namespace CodeCamp.Blackjack.Tests
             player.Hit();
             Assert.AreEqual(3, player.NumberOfCards);
         }
-  }
+
+        [Test]
+        public void GetDealerCards()
+        {
+            game.AddPlayer(player);
+            var dealer = game.Dealer;
+            game.Start();
+
+            Assert.AreEqual(2, dealer.NumberOfCards);
+        }
+    }
 }

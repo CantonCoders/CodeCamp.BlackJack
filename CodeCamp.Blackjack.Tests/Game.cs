@@ -10,10 +10,12 @@ namespace CodeCamp.Blackjack.Tests
         public Game()
         {
             playerList = new List<Player>();
-
+            Dealer = new Dealer();
         }
 
         public int NumberOfPlayers { get { return playerList.Count;}}
+
+        public Dealer Dealer { get; internal set; }
 
         internal void AddPlayer(Player player)
         {
@@ -30,6 +32,9 @@ namespace CodeCamp.Blackjack.Tests
        
             playerList[0].HandCard(new Card());
             playerList[0].HandCard(new Card());
+
+            Dealer.HandCard(new Card());
+            Dealer.HandCard(new Card());
         }
     }
 }
