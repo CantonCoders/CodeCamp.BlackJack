@@ -53,5 +53,14 @@ namespace CodeCamp.Blackjack.Tests
         }
 
 
-}
+        [Test]
+        public void HandTwoCardsWhenGameStarts()
+        {
+
+            game.AddPlayer(player);
+            game.Start();
+            Assert.AreEqual(2, player.NumberOfCards);
+           
+        }
+    }
 }
