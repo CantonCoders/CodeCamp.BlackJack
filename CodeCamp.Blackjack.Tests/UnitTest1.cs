@@ -62,5 +62,14 @@ namespace CodeCamp.Blackjack.Tests
             Assert.AreEqual(2, player.NumberOfCards);
            
         }
-    }
+
+        [Test]
+        public void GetPlayerDrawCard()
+        {
+            game.AddPlayer(player);
+            game.Start();
+            player.Hit();
+            Assert.AreEqual(3, player.NumberOfCards);
+        }
+  }
 }

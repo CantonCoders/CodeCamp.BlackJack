@@ -19,5 +19,10 @@ namespace CodeCamp.Blackjack.Tests
         {
             hand.Add(card);
         }
-    }
+
+        internal void Hit()
+        {
+          hand.Add(new Card());
+        }
+  }
 }
