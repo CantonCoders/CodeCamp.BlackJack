@@ -13,20 +13,16 @@ namespace CodeCamp.Blackjack.Tests
 
         }
 
-        public int NumberOfPlayers { get; internal set; }
+        public int NumberOfPlayers { get { return playerList.Count;}}
 
         internal void AddPlayer(Player player)
         {
-            if (!playerList.Contains(player))
-            {
-                playerList.Add(player);
-                NumberOfPlayers += 1;
-            }
-            else
-            {
+            if (playerList.Contains(player))
                 throw new Exception("Player already exists.");
-            }
-               
+            
+            playerList.Add(player);
+            
+                           
         }
     }
 }

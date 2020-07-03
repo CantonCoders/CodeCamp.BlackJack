@@ -5,17 +5,23 @@ namespace CodeCamp.Blackjack.Tests
 {
     public class Tests
     {
+        private Game game;
+        private Player player;
+        private Player player2;
+
         [SetUp]
         public void Setup()
         {
+            game = new Game();
+            player = new Player();
+            player2 = new Player();
+            player.Name = "Insiya";
+            player2.Name = "James";
         }
 
         [Test]
         public void GetNumberOfPlayers()
         {
-            var game = new Game();
-            Player player = new Player();
-            player.Name = "Insiya";
             game.AddPlayer(player);
             Assert.AreEqual(1, game.NumberOfPlayers);
         }
@@ -23,11 +29,7 @@ namespace CodeCamp.Blackjack.Tests
         [Test]
         public void AddingSecondPlayer()
         {
-            var game = new Game();
-            Player player = new Player();
-            player.Name = "Insiya";
-            Player player2 = new Player();
-            player2.Name = "James";
+            
             game.AddPlayer(player);
             game.AddPlayer(player2);
             Assert.AreEqual(2, game.NumberOfPlayers);
@@ -35,9 +37,7 @@ namespace CodeCamp.Blackjack.Tests
         [Test]
         public void AddingSamePlayerTwice()
         {
-            var game = new Game();
-            Player player = new Player();
-            player.Name = "Insiya";
+            
             game.AddPlayer(player);
          
 
