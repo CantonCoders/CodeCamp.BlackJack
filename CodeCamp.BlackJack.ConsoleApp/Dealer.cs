@@ -4,18 +4,18 @@ namespace CodeCamp.Blackjack.ConsoleApp
 {
     public class Dealer
     {
-        public int NumberOfCards { get { return hand.Count; }  }
+        public int NumberOfCards { get { return Hand.Count; }  }
 
-        private List<Card> hand; 
+        public List<Card> Hand { get; }
 
         public Dealer()
         {
-            hand = new List<Card>();
+            Hand = new List<Card>();
         }
 
         public void HandCard(Card card)
         {
-            hand.Add(card);
+            Hand.Add(card);
         }
     }
 }

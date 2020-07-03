@@ -15,6 +15,7 @@ namespace CodeCamp.Blackjack.Tests
         public void Setup()
         {
             game = new Game();
+            game.AssignDealerDeck(new CardDeckFixture().BuildOnePlayerWinDeck());
             player = new Player();
             player.Name = "Insiya";
         }
@@ -47,6 +48,23 @@ namespace CodeCamp.Blackjack.Tests
         {
             game.AddPlayer(player);
             game.Start();
+        }
+
+        [Test]
+        public void TwoCardsAreDeltStartingWithPlayer()
+        {
+            StartOnePlayerGame();
+            var card = player.Hand.FindAll(i => i.Suit == Suit.Diamonds && i.Name == CardName.Five);
+            Assert.AreEqual(1, card.Count);
+            
+            card = player.Hand.FindAll(i => i.Suit == Suit.Diamonds && i.Name == CardName.Six);
+            Assert.AreEqual(1, card.Count);
+            
+            card = game.Dealer.Hand.FindAll(i => i.Suit == Suit.Clubs && i.Name == CardName.Ten);
+            Assert.AreEqual(1, card.Count);
+
+            card = game.Dealer.Hand.FindAll(i => i.Suit == Suit.Diamonds && i.Name == CardName.Nine);
+            Assert.AreEqual(1, card.Count);
         }
     }
 }

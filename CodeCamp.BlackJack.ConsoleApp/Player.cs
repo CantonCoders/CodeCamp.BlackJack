@@ -5,23 +5,23 @@ namespace CodeCamp.Blackjack.ConsoleApp
 {
     public class Player
     {
-        private List<Card> hand;
+        public List<Card> Hand;
         public Player()
         {
-            hand = new List<Card>();
+            Hand = new List<Card>();
         }
 
         public string Name { get; set; }
-        public int NumberOfCards { get { return hand.Count; } }
+        public int NumberOfCards { get { return Hand.Count; } }
 
         public void HandCard(Card card)
         {
-            hand.Add(card);
+            Hand.Add(card);
         }
 
         public void Hit()
         {
-          hand.Add(new Card());
+          Hand.Add(new Card());
         }
   }
 }
