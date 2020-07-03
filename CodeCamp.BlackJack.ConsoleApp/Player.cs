@@ -10,8 +10,7 @@ namespace CodeCamp.Blackjack.ConsoleApp
         {
             hand = new List<Card>();
         }
-      
-        
+
         public string Name { get; set; }
         public int NumberOfCards { get { return hand.Count; } }
 
