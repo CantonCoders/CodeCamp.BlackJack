@@ -1,7 +1,6 @@
-﻿using NUnit.Framework;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace CodeCamp.Blackjack.Tests
+namespace CodeCamp.Blackjack.ConsoleApp
 {
     public class Dealer
     {
@@ -14,7 +13,7 @@ namespace CodeCamp.Blackjack.Tests
             hand = new List<Card>();
         }
 
-        internal void HandCard(Card card)
+        public void HandCard(Card card)
         {
             hand.Add(card);
         }

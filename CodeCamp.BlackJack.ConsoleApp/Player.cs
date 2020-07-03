@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CodeCamp.Blackjack.Tests
+namespace CodeCamp.Blackjack.ConsoleApp
 {
-    internal class Player
+    public class Player
     {
         private List<Card> hand;
         public Player()
@@ -12,15 +12,15 @@ namespace CodeCamp.Blackjack.Tests
         }
       
         
-        public string Name { get; internal set; }
+        public string Name { get; set; }
         public int NumberOfCards { get { return hand.Count; } }
 
-        internal void HandCard(Card card)
+        public void HandCard(Card card)
         {
             hand.Add(card);
         }
 
-        internal void Hit()
+        public void Hit()
         {
           hand.Add(new Card());
         }

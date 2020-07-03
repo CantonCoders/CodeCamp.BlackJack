@@ -1,3 +1,4 @@
+using CodeCamp.Blackjack.ConsoleApp;
 using NUnit.Framework;
 using System;
 
@@ -19,7 +20,6 @@ namespace CodeCamp.Blackjack.Tests
             player.Name = "Insiya";
             player2.Name = "James";
         }
-
 
         [Test]
         public void AddMultiplePlayers()

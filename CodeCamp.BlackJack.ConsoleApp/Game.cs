@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CodeCamp.Blackjack.Tests
+namespace CodeCamp.Blackjack.ConsoleApp
 {
     public class Game
     {
@@ -13,23 +13,21 @@ namespace CodeCamp.Blackjack.Tests
             Dealer = new Dealer();
         }
 
-        public int NumberOfPlayers { get { return playerList.Count;}}
+        public int NumberOfPlayers { get { return playerList.Count;} }
 
         public Dealer Dealer { get; internal set; }
 
-        internal void AddPlayer(Player player)
+        public void AddPlayer(Player player)
         {
             if (playerList.Contains(player))
                 throw new Exception("Player already exists.");
             
-            playerList.Add(player);
-            
-                           
+            playerList.Add(player);            
         }
 
-        internal void Start()
+        public void Start()
         {
-       
+            /*TODO REDUCE THESE LINES AND CREATE A OVERLOAD TO SAVE NUMBER OF OBJECTS WE GIVE.*/
             playerList[0].HandCard(new Card());
             playerList[0].HandCard(new Card());
 

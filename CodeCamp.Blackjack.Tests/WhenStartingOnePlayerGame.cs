@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using CodeCamp.Blackjack.ConsoleApp;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -21,10 +22,8 @@ namespace CodeCamp.Blackjack.Tests
         [Test]
         public void PlayerReceivesTwoCards()
         {
-
             StartOnePlayerGame();
             Assert.AreEqual(2, player.NumberOfCards);
-
         }
 
         [Test]
