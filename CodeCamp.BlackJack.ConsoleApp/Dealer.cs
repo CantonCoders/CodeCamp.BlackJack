@@ -2,7 +2,7 @@
 
 namespace CodeCamp.Blackjack.ConsoleApp
 {
-    public class Dealer
+    public class Dealer : Hand
     {
         public int NumberOfCards { get { return Hand.Count; }  }
 
@@ -13,7 +13,7 @@ namespace CodeCamp.Blackjack.ConsoleApp
             Hand = new List<Card>();
         }
 
-        public void HandCard(Card card)
+        public void Deal(Card card)
         {
             Hand.Add(card);
         }

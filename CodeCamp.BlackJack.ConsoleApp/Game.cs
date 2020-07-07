@@ -33,14 +33,21 @@ namespace CodeCamp.Blackjack.ConsoleApp
 
         public void Start()
         {
-            /*TODO REDUCE THESE LINES AND CREATE A OVERLOAD TO SAVE NUMBER OF OBJECTS WE GIVE.*/
-            playerList[0].HandCard(GameDeck[0]);
-            GameDeck.RemoveAt(0);
-            Dealer.HandCard(GameDeck[0]);
-            GameDeck.RemoveAt(0);
-            playerList[0].HandCard(GameDeck[0]);
-            GameDeck.RemoveAt(0);
-            Dealer.HandCard(GameDeck[0]);
+            for(var i = 0; i < 2; i++)
+            {
+                DealCard(playerList[0]);
+                DealCard(Dealer);
+            }
+        }
+
+        public void Hit()
+        {
+            DealCard(playerList[0]);
+        }
+
+        public void DealCard(Hand hand)
+        {
+            hand.Deal(GameDeck[0]);
             GameDeck.RemoveAt(0);
         }
     }

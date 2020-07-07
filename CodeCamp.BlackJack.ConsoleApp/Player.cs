@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CodeCamp.Blackjack.ConsoleApp
 {
-    public class Player
+    public class Player : Hand
     {
         public List<Card> Hand;
         public Player()
@@ -14,14 +14,9 @@ namespace CodeCamp.Blackjack.ConsoleApp
         public string Name { get; set; }
         public int NumberOfCards { get { return Hand.Count; } }
 
-        public void HandCard(Card card)
+        public void Deal(Card card)
         {
             Hand.Add(card);
-        }
-
-        public void Hit()
-        {
-          Hand.Add(new Card());
         }
   }
 }

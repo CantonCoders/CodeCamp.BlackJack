@@ -31,9 +31,12 @@ namespace CodeCamp.Blackjack.Tests
         public void PlayerCanDrawACard()
         {
             StartOnePlayerGame();
-            player.Hit();
+            game.Hit();
             Assert.AreEqual(3, player.NumberOfCards);
-        }
+
+          var card = player.Hand.FindAll(i => i.Suit == Suit.Hearts && i.Name == CardName.Six);
+          Assert.AreEqual(1, card.Count);
+    }
 
         [Test]
         public void DealerRecievesTwoCards()
@@ -54,6 +57,7 @@ namespace CodeCamp.Blackjack.Tests
         public void TwoCardsAreDeltStartingWithPlayer()
         {
             StartOnePlayerGame();
+
             var card = player.Hand.FindAll(i => i.Suit == Suit.Diamonds && i.Name == CardName.Five);
             Assert.AreEqual(1, card.Count);
             
