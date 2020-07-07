@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CodeCamp.Blackjack.ConsoleApp
 {
-    public class Player : Hand
+    public class Player
     {
         public List<Card> Hand;
         public Player()

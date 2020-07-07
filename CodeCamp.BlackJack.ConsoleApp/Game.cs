@@ -11,12 +11,12 @@ namespace CodeCamp.Blackjack.ConsoleApp
         public Game()
         {
             playerList = new List<Player>();
-            Dealer = new Dealer();
+            Dealer = new Player();
         }
 
         public int NumberOfPlayers { get { return playerList.Count;} }
 
-        public Dealer Dealer { get; internal set; }
+        public Player Dealer { get; internal set; }
 
         public void AssignDealerDeck(List<Card> cards)
         {
@@ -45,9 +45,9 @@ namespace CodeCamp.Blackjack.ConsoleApp
             DealCard(playerList[0]);
         }
 
-        public void DealCard(Hand hand)
+        public void DealCard(Player player)
         {
-            hand.Deal(GameDeck[0]);
+            player.Deal(GameDeck[0]);
             GameDeck.RemoveAt(0);
         }
     }
