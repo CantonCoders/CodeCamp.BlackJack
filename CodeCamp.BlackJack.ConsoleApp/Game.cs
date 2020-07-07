@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CodeCamp.BlackJack.ConsoleApp;
+using System;
 using System.Collections.Generic;
 
 namespace CodeCamp.Blackjack.ConsoleApp
@@ -7,6 +8,7 @@ namespace CodeCamp.Blackjack.ConsoleApp
     {
         private List<Player> playerList;
         private List<Card> GameDeck;
+        public GameStatus Status { get; internal set; }
 
         public Game()
         {

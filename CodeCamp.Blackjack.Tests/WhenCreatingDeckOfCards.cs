@@ -53,41 +53,58 @@ namespace CodeCamp.Blackjack.Tests
             var card = deck.FindAll(i => i.Suit == suit && i.Name == CardName.Ace);
             Assert.AreEqual(1, card.Count);
 
+            Assert.AreEqual(11, card[0].PointValue);
+
             card = deck.FindAll(i => i.Suit == suit && i.Name == CardName.Two);
             Assert.AreEqual(1, card.Count);
+            Assert.AreEqual(2, card[0].PointValue);
 
             card = deck.FindAll(i => i.Suit == suit && i.Name == CardName.Three);
             Assert.AreEqual(1, card.Count);
+            Assert.AreEqual(3, card[0].PointValue);
 
             card = deck.FindAll(i => i.Suit == suit && i.Name == CardName.Four);
             Assert.AreEqual(1, card.Count);
+            Assert.AreEqual(4, card[0].PointValue);
 
             card = deck.FindAll(i => i.Suit == suit && i.Name == CardName.Five);
             Assert.AreEqual(1, card.Count);
+            Assert.AreEqual(5, card[0].PointValue);
 
             card = deck.FindAll(i => i.Suit == suit && i.Name == CardName.Six);
             Assert.AreEqual(1, card.Count);
+            Assert.AreEqual(6, card[0].PointValue);
 
             card = deck.FindAll(i => i.Suit == suit && i.Name == CardName.Seven);
             Assert.AreEqual(1, card.Count);
+            Assert.AreEqual(7, card[0].PointValue);
 
             card = deck.FindAll(i => i.Suit == suit && i.Name == CardName.Eight);
             Assert.AreEqual(1, card.Count);
+            Assert.AreEqual(8, card[0].PointValue);
 
             card = deck.FindAll(i => i.Suit == suit && i.Name == CardName.Nine);
             Assert.AreEqual(1, card.Count);
+            Assert.AreEqual(9, card[0].PointValue);
 
             card = deck.FindAll(i => i.Suit == suit && i.Name == CardName.Ten);
             Assert.AreEqual(1, card.Count);
+            Assert.AreEqual(10, card[0].PointValue);
 
             card = deck.FindAll(i => i.Suit == suit && i.Name == CardName.Jack);
             Assert.AreEqual(1, card.Count);
+            Assert.AreEqual(10, card[0].PointValue);
+
 
             card = deck.FindAll(i => i.Suit == suit && i.Name == CardName.Queen);
             Assert.AreEqual(1, card.Count);
+            Assert.AreEqual(10, card[0].PointValue);
 
             card = deck.FindAll(i => i.Suit == suit && i.Name == CardName.King);
             Assert.AreEqual(1, card.Count);
+            Assert.AreEqual(10, card[0].PointValue);
+
         }
+
     }
 }

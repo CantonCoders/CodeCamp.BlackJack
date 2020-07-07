@@ -13,12 +13,24 @@ namespace CodeCamp.Blackjack.ConsoleApp
             {
                 foreach(CardName cardName in Enum.GetValues(typeof(CardName)))
                 {
-                    deck.Add(new Card(suit, cardName));         
+                    deck.Add(NewCard(suit, cardName));
                 }
             }
 
 
             return deck;
+        }
+
+        public static Card NewCard(Suit suit, CardName cardName)
+        {
+            var point = (int)cardName + 1;
+
+            if (cardName == CardName.Ace)
+                point = 11;
+            if ((int)cardName >= 10)
+                point = 10;
+
+            return new Card(suit, cardName, point);
         }
     }
 }

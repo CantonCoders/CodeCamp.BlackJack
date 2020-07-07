@@ -1,4 +1,5 @@
 ﻿using CodeCamp.Blackjack.ConsoleApp;
+using CodeCamp.BlackJack.ConsoleApp;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -69,6 +70,13 @@ namespace CodeCamp.Blackjack.Tests
 
             card = game.Dealer.Hand.FindAll(i => i.Suit == Suit.Diamonds && i.Name == CardName.Nine);
             Assert.AreEqual(1, card.Count);
+        }
+
+        [Test]
+        public void GameStatusIsInProgress()
+        {
+            StartOnePlayerGame();
+            Assert.AreEqual(GameStatus.InProgress, game.Status);
         }
     }
 }
