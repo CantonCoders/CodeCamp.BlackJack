@@ -28,8 +28,8 @@ namespace CodeCamp.Blackjack.Tests
         internal void Start()
         {
        
-            playerList[0].HandCard(new Card());
-            playerList[0].HandCard(new Card());
+            playerList[0].HandCard(new Card(Suit.Hearts, Rank.Ace));
+            playerList[0].HandCard(new Card(Suit.Hearts, Rank.Ace));
         }
     }
 }
