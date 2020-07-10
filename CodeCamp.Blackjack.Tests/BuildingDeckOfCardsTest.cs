@@ -7,14 +7,22 @@ namespace CodeCamp.Blackjack.Tests
 {
     public class BuildingDeckOfCardsTest
     {
+        private CardFactory cardShuffler;
+        private List<Card> deck;
+
+        [SetUp]
+        public void SetUp()
+        {
+            cardShuffler = new CardFactory();
+            deck = cardShuffler.BuildNonJokerDeck();
+        }
+
         // array of cards
         // track cards that are dealt - no duplicates
         // assign number & suite
         [Test]
         public void BuildingDeckOf52Cards()
         {
-            var cardShuffler = new CardShuffler();
-            var deck = cardShuffler.BuildDeck();
             Assert.NotNull(deck);
             Assert.AreEqual(52, deck.Count);
 
@@ -25,9 +33,6 @@ namespace CodeCamp.Blackjack.Tests
         [Test]
         public void GetAllSuitWith13Cards()
         {
-            var cardShuffler = new CardShuffler();
-            var deck = cardShuffler.BuildDeck();
-
             var hearts = deck.FindAll(card => card.Suit == Suit.Hearts);
             Assert.AreEqual(13, hearts.Count);
             //Assert.AreEqual("4D", deck[16]);
@@ -43,9 +48,6 @@ namespace CodeCamp.Blackjack.Tests
         [Test]
         public void FullDeckOfCardsEachSuitHas13UniqueCards()
         {
-            var cardShuffler = new CardShuffler();
-            var deck = cardShuffler.BuildDeck();
-
             var hearts = deck.FindAll(card => card.Suit == Suit.Hearts);
             AssertCardRanks(hearts);
 

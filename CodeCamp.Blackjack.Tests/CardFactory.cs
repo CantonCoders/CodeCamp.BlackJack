@@ -3,13 +3,13 @@ using System.Collections.Generic;
 
 namespace CodeCamp.Blackjack.Tests
 {
-    internal class CardShuffler
+    internal class CardFactory
     {
-        public CardShuffler()
+        public CardFactory()
         {
         }
 
-        public List<Card> BuildDeck()
+        public List<Card> BuildNonJokerDeck()
         {
             var cards= new List<Card>();
             //HDCS
