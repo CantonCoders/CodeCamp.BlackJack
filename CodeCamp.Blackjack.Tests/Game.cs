@@ -3,6 +3,11 @@ using System.Collections.Generic;
 
 namespace CodeCamp.Blackjack.Tests
 {
+    public enum GameState {
+        New,
+        Finished,
+       
+    }
     public class Game
     {
         private List<Player> playerList;
@@ -14,6 +19,7 @@ namespace CodeCamp.Blackjack.Tests
 
         }
 
+        public GameState State { get; internal set; }
         public int NumberOfPlayers { get { return playerList.Count;}}
 
         public Player Dealer { get; internal set; }
@@ -34,6 +40,11 @@ namespace CodeCamp.Blackjack.Tests
             Dealer.HandCard(new Card(Suit.Hearts, Rank.Eight));
             Dealer.HandCard(new Card(Suit.Diamonds, Rank.Nine));
 
+        }
+
+        internal void Stay()
+        {
+            State = GameState.Finished;
         }
     }
 }

@@ -3,7 +3,7 @@ using System;
 
 namespace CodeCamp.Blackjack.Tests
 {
-    public class Tests
+    public class InitializingGameTest
     {
         private Game game;
         private Player player;
@@ -18,6 +18,14 @@ namespace CodeCamp.Blackjack.Tests
             player.Name = "Insiya";
             player2.Name = "James";
         }
+
+        [Test]
+        public void GameStateIsNewGame()
+        {
+            
+            Assert.AreEqual(GameState.New, game.State);
+        }
+
 
         [Test]
         public void GetNumberOfPlayers()
@@ -53,17 +61,6 @@ namespace CodeCamp.Blackjack.Tests
         }
 
 
-        [Test]
-        public void HandTwoCardsWhenGameStarts()
-        {
-
-            game.AddPlayer(player);
-            game.Start();
-            Assert.AreEqual(2, player.NumberOfCards);
-            Assert.AreEqual(new Card(Suit.Spades, Rank.Ace), player.Hand[0]);
-            Assert.AreEqual(new Card(Suit.Clubs, Rank.Queen), player.Hand[1]);
-            Assert.AreEqual(new Card(Suit.Hearts, Rank.Eight), game.Dealer.Hand[0]);
-            Assert.AreEqual(new Card(Suit.Diamonds, Rank.Nine), game.Dealer.Hand[1]);
-        }
-    }
+        
+    } 
 }
