@@ -14,5 +14,22 @@
 
         public Rank Rank { get; }
         public Suit Suit { get; }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Card card &&
+                   Rank == card.Rank &&
+                   Suit == card.Suit;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return Rank + " of " + Suit;
+        }
     }
 }

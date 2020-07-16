@@ -3,21 +3,23 @@ using System.Collections.Generic;
 
 namespace CodeCamp.Blackjack.Tests
 {
-    internal class Player
+    public class Player
     {
-        private List<Card> hand;
         public Player()
         {
-            hand = new List<Card>();
+            Hand = new List<Card>();
         }
       
+
         
         public string Name { get; internal set; }
-        public int NumberOfCards { get { return hand.Count; } }
+        public int NumberOfCards { get { return Hand.Count; } }
+
+        public List<Card> Hand { get; internal set; }
 
         internal void HandCard(Card card)
         {
-            hand.Add(card);
+            Hand.Add(card);
         }
     }
 }

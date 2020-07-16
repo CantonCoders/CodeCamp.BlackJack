@@ -60,7 +60,10 @@ namespace CodeCamp.Blackjack.Tests
             game.AddPlayer(player);
             game.Start();
             Assert.AreEqual(2, player.NumberOfCards);
-           
+            Assert.AreEqual(new Card(Suit.Spades, Rank.Ace), player.Hand[0]);
+            Assert.AreEqual(new Card(Suit.Clubs, Rank.Queen), player.Hand[1]);
+            Assert.AreEqual(new Card(Suit.Hearts, Rank.Eight), game.Dealer.Hand[0]);
+            Assert.AreEqual(new Card(Suit.Diamonds, Rank.Nine), game.Dealer.Hand[1]);
         }
     }
 }
