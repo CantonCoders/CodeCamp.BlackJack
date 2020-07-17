@@ -13,11 +13,20 @@ namespace CodeCamp.Blackjack.Tests
         [SetUp]
         public void Setup()
         {
+            var deck = new List<Card>()
+            {
+                new Card(Suit.Spades, Rank.Ace),
+                new Card(Suit.Hearts, Rank.Eight),
+                new Card(Suit.Clubs, Rank.Queen),
+                new Card(Suit.Diamonds, Rank.Nine),
+                new Card(Suit.Clubs, Rank.Four),
+            };
+
             game = new Game();
             player = new Player();
             player.Name = "Insiya";
             game.AddPlayer(player);
-            game.Start();
+            game.Start(deck);
         }
         [Test]
         public void HandTwoCardsWhenGameStarts()

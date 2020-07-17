@@ -11,6 +11,7 @@ namespace CodeCamp.Blackjack.Tests
     public class Game
     {
         private List<Player> playerList;
+        private List<Card> deck;
 
         public Game()
         {
@@ -34,10 +35,23 @@ namespace CodeCamp.Blackjack.Tests
 
         internal void Start()
         {
-            playerList[0].HandCard(new Card(Suit.Spades, Rank.Ace));
-            playerList[0].HandCard(new Card(Suit.Clubs, Rank.Queen));
-            Dealer.HandCard(new Card(Suit.Hearts, Rank.Eight));
-            Dealer.HandCard(new Card(Suit.Diamonds, Rank.Nine));
+            for (var i = 0; i < 2; i++)
+            {
+                foreach(var player in playerList)
+                {
+                    player.HandCard(deck[0]);
+                    deck.RemoveAt(0);
+                }
+                
+                Dealer.HandCard(deck[0]);
+                deck.RemoveAt(0);
+            }
+        }
+
+        internal void Start(List<Card> deck)
+        {
+            this.deck = deck;
+            Start();
         }
 
         public Player Winner { get; internal set; }
