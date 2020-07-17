@@ -21,7 +21,8 @@ namespace CodeCamp.Blackjack.Tests
                 new Card(Suit.Hearts, Rank.Eight),
                 new Card(Suit.Clubs, Rank.Four),
                 new Card(Suit.Clubs, Rank.Eight),
-                new Card(Suit.Diamonds, Rank.Nine)
+                new Card(Suit.Diamonds, Rank.Nine),
+                new Card(Suit.Clubs, Rank.Nine),
             };
 
 
@@ -45,6 +46,21 @@ namespace CodeCamp.Blackjack.Tests
 
             Assert.AreEqual(new Card(Suit.Hearts, Rank.Eight), game.Dealer.Hand[0]);
             Assert.AreEqual(new Card(Suit.Diamonds, Rank.Nine), game.Dealer.Hand[1]);
+        }
+
+        [Test]
+        public void PlayerOneTurn()
+        {
+            Assert.AreEqual(player, game.PlayerTurn);
+        }
+
+        [Test]
+        public void PlayerOneTakesCard()
+        {
+            game.Hit();
+            Assert.AreEqual(player.NumberOfCards, 3);
+            Assert.AreEqual(new Card(Suit.Clubs, Rank.Nine), player.Hand[2]);
+            Assert.AreEqual(player2, game.PlayerTurn);
         }
     }
 }

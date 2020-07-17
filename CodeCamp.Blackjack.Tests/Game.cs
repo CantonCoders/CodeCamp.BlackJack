@@ -46,6 +46,7 @@ namespace CodeCamp.Blackjack.Tests
                 Dealer.HandCard(deck[0]);
                 deck.RemoveAt(0);
             }
+            PlayerTurn = playerList[0];
         }
 
         internal void Start(List<Card> deck)
@@ -55,6 +56,7 @@ namespace CodeCamp.Blackjack.Tests
         }
 
         public Player Winner { get; internal set; }
+        public Player PlayerTurn { get; internal set; }
 
         internal void Stay()
         {
@@ -64,8 +66,11 @@ namespace CodeCamp.Blackjack.Tests
 
         internal void Hit()
         {
+            PlayerTurn.HandCard(deck[0]);
             State = GameState.Finished;
             Winner = Dealer;
+            if(NumberOfPlayers > 1)
+                PlayerTurn = playerList[1];
         }
     }
 }
