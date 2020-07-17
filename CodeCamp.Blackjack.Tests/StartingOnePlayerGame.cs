@@ -32,9 +32,16 @@ namespace CodeCamp.Blackjack.Tests
         public void PlayerDecidesToStay()
         {
             game.Stay();
+            Assert.AreEqual(player, game.Winner);
             Assert.AreEqual(GameState.Finished, game.State);
+        }
 
-
+        [Test]
+        public void PlayerDecidesToTakeACard()
+        {
+            game.Hit();
+            Assert.AreEqual(GameState.Finished, game.State);
+            Assert.AreEqual(game.Dealer, game.Winner);
         }
     }
 }
