@@ -3,10 +3,11 @@ using System.Collections.Generic;
 
 namespace CodeCamp.Blackjack.Tests
 {
-    public enum GameState {
+    public enum GameState
+    {
         New,
         Finished,
-       
+
     }
     public class Game
     {
@@ -21,7 +22,7 @@ namespace CodeCamp.Blackjack.Tests
         }
 
         public GameState State { get; internal set; }
-        public int NumberOfPlayers { get { return playerList.Count;}}
+        public int NumberOfPlayers { get { return playerList.Count; } }
 
         public Player Dealer { get; internal set; }
 
@@ -29,24 +30,24 @@ namespace CodeCamp.Blackjack.Tests
         {
             if (playerList.Contains(player))
                 throw new Exception("Player already exists.");
-            
-            playerList.Add(player);                
+
+            playerList.Add(player);
         }
 
         internal void Start()
         {
             for (var i = 0; i < 2; i++)
             {
-                foreach(var player in playerList)
+                foreach (var player in playerList)
                 {
                     player.HandCard(deck[0]);
                     deck.RemoveAt(0);
                 }
-                
+
                 Dealer.HandCard(deck[0]);
                 deck.RemoveAt(0);
             }
-            PlayerTurn = playerList[0];
+            CurrentPlayerIndex = 0;
         }
 
         internal void Start(List<Card> deck)
@@ -56,13 +57,16 @@ namespace CodeCamp.Blackjack.Tests
         }
 
         public Player Winner { get; internal set; }
-        public Player PlayerTurn { get; internal set; }
+        public Player PlayerTurn { get { return playerList[CurrentPlayerIndex]; } }
 
         internal void Stay()
         {
             State = GameState.Finished;
             Winner = playerList[0];
+            NextPlayer();
         }
+
+        private int CurrentPlayerIndex = 0;
 
         internal void Hit()
         {
@@ -70,8 +74,16 @@ namespace CodeCamp.Blackjack.Tests
             deck.RemoveAt(0);
             State = GameState.Finished;
             Winner = Dealer;
-            if(NumberOfPlayers > 1)
-                PlayerTurn = playerList[1];
+            NextPlayer();
+
+        }
+
+        private void NextPlayer()
+        {
+            CurrentPlayerIndex++;
+            if (CurrentPlayerIndex >= NumberOfPlayers)
+
+                CurrentPlayerIndex = 0;
         }
     }
 }

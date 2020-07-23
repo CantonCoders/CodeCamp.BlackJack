@@ -76,5 +76,18 @@ namespace CodeCamp.Blackjack.Tests
             Assert.AreEqual(new Card(Suit.Hearts, Rank.Five), player2.Hand[2]);
             Assert.AreEqual(player2.Score(), 20);
         }
+        [Test]
+        public void PlayerOneStays()
+        {
+           
+            Assert.AreEqual(player, game.PlayerTurn);
+            game.Hit();
+            Assert.AreEqual(player2, game.PlayerTurn);
+            game.Hit();
+            Assert.AreEqual(player, game.PlayerTurn);
+            game.Stay();
+            Assert.AreEqual(player2, game.PlayerTurn);
+
+        }
     }
 }
