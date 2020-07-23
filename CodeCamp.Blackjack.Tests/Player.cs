@@ -30,5 +30,16 @@ namespace CodeCamp.Blackjack.Tests
         {
             Hand.Add(card);
         }
+
+        internal int Score()
+        {
+            int total = 0;
+
+            foreach(Card card in Hand)
+            {
+                total += card.PointValue;
+            }
+            return total;
+        }
     }
 }

@@ -51,6 +51,7 @@ namespace CodeCamp.Blackjack.Tests
         [Test]
         public void PlayerOneTurn()
         {
+            Assert.AreEqual(player.Score(), 9);
             Assert.AreEqual(player, game.PlayerTurn);
         }
 
@@ -60,7 +61,14 @@ namespace CodeCamp.Blackjack.Tests
             game.Hit();
             Assert.AreEqual(player.NumberOfCards, 3);
             Assert.AreEqual(new Card(Suit.Clubs, Rank.Nine), player.Hand[2]);
+            Assert.AreEqual(player.Score(), 18);
             Assert.AreEqual(player2, game.PlayerTurn);
+        }
+
+        [Test]
+        public void test()
+        {
+
         }
     }
 }

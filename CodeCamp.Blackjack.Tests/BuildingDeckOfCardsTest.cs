@@ -58,7 +58,6 @@ namespace CodeCamp.Blackjack.Tests
         private static void AssertCardRanks(List<Card> suit)
         {
             var i = 0;
-            Assert.AreEqual(Rank.Ace, suit[i++].Rank);
             Assert.AreEqual(Rank.Two, suit[i++].Rank);
             Assert.AreEqual(Rank.Three, suit[i++].Rank);
             Assert.AreEqual(Rank.Four, suit[i++].Rank);
@@ -71,6 +70,8 @@ namespace CodeCamp.Blackjack.Tests
             Assert.AreEqual(Rank.Jack, suit[i++].Rank);
             Assert.AreEqual(Rank.Queen, suit[i++].Rank);
             Assert.AreEqual(Rank.King, suit[i++].Rank);
+            Assert.AreEqual(Rank.Ace, suit[i++].Rank);
+
         }
     }
 }
