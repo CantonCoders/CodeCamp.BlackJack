@@ -67,6 +67,7 @@ namespace CodeCamp.Blackjack.Tests
         internal void Hit()
         {
             PlayerTurn.HandCard(deck[0]);
+            deck.RemoveAt(0);
             State = GameState.Finished;
             Winner = Dealer;
             if(NumberOfPlayers > 1)
