@@ -7,7 +7,7 @@ namespace CodeCamp.Blackjack.Tests
     {
         New,
         Finished,
-
+        Playing,
     }
     public class Game
     {
@@ -48,20 +48,22 @@ namespace CodeCamp.Blackjack.Tests
                 deck.RemoveAt(0);
             }
             CurrentPlayerIndex = 0;
+            State = GameState.Playing;
         }
 
         internal void Start(List<Card> deck)
         {
             this.deck = deck;
+            
             Start();
         }
 
         public Player Winner { get; internal set; }
-        public Player PlayerTurn { get { return playerList[CurrentPlayerIndex]; } }
+        public Player CurrentPlayer { get { return playerList[CurrentPlayerIndex]; } }
 
         internal void Stay()
         {
-            State = GameState.Finished;
+            CurrentPlayer.Stay();
             Winner = playerList[0];
             NextPlayer();
         }
@@ -70,9 +72,8 @@ namespace CodeCamp.Blackjack.Tests
 
         internal void Hit()
         {
-            PlayerTurn.HandCard(deck[0]);
+            CurrentPlayer.HandCard(deck[0]);
             deck.RemoveAt(0);
-            State = GameState.Finished;
             Winner = Dealer;
             NextPlayer();
 
@@ -84,6 +85,10 @@ namespace CodeCamp.Blackjack.Tests
             if (CurrentPlayerIndex >= NumberOfPlayers)
 
                 CurrentPlayerIndex = 0;
+            if(CurrentPlayer.Stayed)
+            {
+                State = GameState.Finished;
+            }
         }
     }
 }

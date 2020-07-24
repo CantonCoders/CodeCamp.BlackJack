@@ -20,6 +20,7 @@ namespace CodeCamp.Blackjack.Tests
         public int NumberOfCards { get { return Hand.Count; } }
 
         public List<Card> Hand { get; internal set; }
+        public bool Stayed { get; internal set; }
 
         public override string ToString()
         {
@@ -29,6 +30,8 @@ namespace CodeCamp.Blackjack.Tests
         internal void HandCard(Card card)
         {
             Hand.Add(card);
+            if (Score() > 21)
+                Stayed = true;
         }
 
         internal int Score()
@@ -40,6 +43,11 @@ namespace CodeCamp.Blackjack.Tests
                 total += card.PointValue;
             }
             return total;
+        }
+
+        internal void Stay()
+        {
+            Stayed = true;
         }
     }
 }

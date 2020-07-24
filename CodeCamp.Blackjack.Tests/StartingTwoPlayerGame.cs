@@ -53,7 +53,7 @@ namespace CodeCamp.Blackjack.Tests
         public void PlayerOneTurn()
         {
             Assert.AreEqual(player.Score(), 9);
-            Assert.AreEqual(player, game.PlayerTurn);
+            Assert.AreEqual(player, game.CurrentPlayer);
         }
 
         [Test]
@@ -69,9 +69,9 @@ namespace CodeCamp.Blackjack.Tests
         public void PlayerTwoTakesCard()
         {
             Assert.AreEqual(player2.Score(), 15);
-            Assert.AreEqual(player, game.PlayerTurn);
+            Assert.AreEqual(player, game.CurrentPlayer);
             game.Hit();
-            Assert.AreEqual(player2, game.PlayerTurn);
+            Assert.AreEqual(player2, game.CurrentPlayer);
             game.Hit();
             Assert.AreEqual(new Card(Suit.Hearts, Rank.Five), player2.Hand[2]);
             Assert.AreEqual(player2.Score(), 20);
@@ -80,14 +80,35 @@ namespace CodeCamp.Blackjack.Tests
         public void PlayerOneStays()
         {
            
-            Assert.AreEqual(player, game.PlayerTurn);
+            Assert.AreEqual(player, game.CurrentPlayer);
             game.Hit();
-            Assert.AreEqual(player2, game.PlayerTurn);
+            Assert.AreEqual(player2, game.CurrentPlayer);
             game.Hit();
-            Assert.AreEqual(player, game.PlayerTurn);
+            Assert.AreEqual(player, game.CurrentPlayer);
             game.Stay();
-            Assert.AreEqual(player2, game.PlayerTurn);
+            Assert.AreEqual(player2, game.CurrentPlayer);
 
+        }
+
+        [Test]
+        public void test()
+        {
+            Assert.AreEqual(game.State, GameState.Playing);
+            Assert.AreEqual(player, game.CurrentPlayer);
+            game.Hit();
+            Assert.AreEqual(game.State, GameState.Playing);
+
+            Assert.AreEqual(player2, game.CurrentPlayer);
+            game.Hit();
+            Assert.AreEqual(game.State, GameState.Playing);
+
+            Assert.AreEqual(player, game.CurrentPlayer);
+            game.Stay();
+            Assert.AreEqual(game.State, GameState.Playing);
+
+            Assert.AreEqual(player2, game.CurrentPlayer);
+            game.Stay();
+            Assert.AreEqual(game.State, GameState.Finished);
         }
     }
 }

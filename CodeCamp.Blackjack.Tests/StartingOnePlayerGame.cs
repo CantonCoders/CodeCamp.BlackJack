@@ -15,7 +15,7 @@ namespace CodeCamp.Blackjack.Tests
         {
             var deck = new List<Card>()
             {
-                new Card(Suit.Spades, Rank.Ace),
+                new Card(Suit.Spades, Rank.King),
                 new Card(Suit.Hearts, Rank.Eight),
                 new Card(Suit.Clubs, Rank.Queen),
                 new Card(Suit.Diamonds, Rank.Nine),
@@ -32,7 +32,7 @@ namespace CodeCamp.Blackjack.Tests
         public void HandTwoCardsWhenGameStarts()
         {
             Assert.AreEqual(2, player.NumberOfCards);
-            Assert.AreEqual(new Card(Suit.Spades, Rank.Ace), player.Hand[0]);
+            Assert.AreEqual(new Card(Suit.Spades, Rank.King), player.Hand[0]);
             Assert.AreEqual(new Card(Suit.Clubs, Rank.Queen), player.Hand[1]);
             Assert.AreEqual(new Card(Suit.Hearts, Rank.Eight), game.Dealer.Hand[0]);
             Assert.AreEqual(new Card(Suit.Diamonds, Rank.Nine), game.Dealer.Hand[1]);
