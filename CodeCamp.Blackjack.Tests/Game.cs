@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CodeCamp.Blackjack.Tests
 {
@@ -64,7 +65,6 @@ namespace CodeCamp.Blackjack.Tests
         internal void Stay()
         {
             CurrentPlayer.Stay();
-            Winner = playerList[0];
             NextPlayer();
         }
 
@@ -88,6 +88,10 @@ namespace CodeCamp.Blackjack.Tests
             if(CurrentPlayer.Stayed)
             {
                 State = GameState.Finished;
+                Winner = playerList.Where(o=>o.Score()<=21).OrderByDescending(o => o.Score()).FirstOrDefault();
+                if (Winner == null) {
+                    Winner = Dealer;
+                }            
             }
         }
     }

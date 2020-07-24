@@ -91,7 +91,7 @@ namespace CodeCamp.Blackjack.Tests
         }
 
         [Test]
-        public void test()
+        public void GameFinishedWhenAllPlayersStay()
         {
             Assert.AreEqual(game.State, GameState.Playing);
             Assert.AreEqual(player, game.CurrentPlayer);
@@ -109,6 +109,8 @@ namespace CodeCamp.Blackjack.Tests
             Assert.AreEqual(player2, game.CurrentPlayer);
             game.Stay();
             Assert.AreEqual(game.State, GameState.Finished);
+            Assert.AreEqual(game.Winner, player2);
+
         }
     }
 }
