@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 
 namespace CodeCamp.Blackjack.Tests
@@ -38,9 +39,14 @@ namespace CodeCamp.Blackjack.Tests
         {
             int total = 0;
 
-            foreach(Card card in Hand)
+            var query = Hand.OrderBy(card => card.PointValue);
+
+            foreach(Card card in query)
             {
-                total += card.PointValue;
+                if (card.Rank == Rank.Ace && total > 10)
+                    total++;
+                else
+                    total += card.PointValue;
             }
             return total;
         }

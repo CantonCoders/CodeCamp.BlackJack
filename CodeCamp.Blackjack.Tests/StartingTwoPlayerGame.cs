@@ -97,14 +97,17 @@ namespace CodeCamp.Blackjack.Tests
             Assert.AreEqual(player, game.CurrentPlayer);
             game.Hit();
             Assert.AreEqual(game.State, GameState.Playing);
+            Assert.IsNull(game.Winner);
 
             Assert.AreEqual(player2, game.CurrentPlayer);
             game.Hit();
             Assert.AreEqual(game.State, GameState.Playing);
+            Assert.IsNull(game.Winner);
 
             Assert.AreEqual(player, game.CurrentPlayer);
             game.Stay();
             Assert.AreEqual(game.State, GameState.Playing);
+            Assert.IsNull(game.Winner);
 
             Assert.AreEqual(player2, game.CurrentPlayer);
             game.Stay();

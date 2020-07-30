@@ -74,7 +74,6 @@ namespace CodeCamp.Blackjack.Tests
         {
             CurrentPlayer.HandCard(deck[0]);
             deck.RemoveAt(0);
-            Winner = Dealer;
             NextPlayer();
 
         }
