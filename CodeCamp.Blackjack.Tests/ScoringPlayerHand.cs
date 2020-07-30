@@ -38,5 +38,18 @@ namespace CodeCamp.Blackjack.Tests
 
             Assert.AreEqual(21, player.Score());
         }
+
+
+        [Test]
+        public void ScoringAllFourAces()
+        {
+            var player = new Player();
+            player.HandCard(new Card(Suit.Clubs, Rank.Ace));
+            player.HandCard(new Card(Suit.Diamonds, Rank.Ace));
+            player.HandCard(new Card(Suit.Hearts, Rank.Ace));
+            player.HandCard(new Card(Suit.Spades, Rank.Ace));
+
+            Assert.AreEqual(14, player.Score());
+        }
     }
 }
