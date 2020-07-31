@@ -31,7 +31,7 @@ namespace CodeCamp.Blackjack.Tests
         internal void HandCard(Card card)
         {
             Hand.Add(card);
-            if (Score() > 21)
+            if (Score() >= 21)
                 Stayed = true;
         }
 

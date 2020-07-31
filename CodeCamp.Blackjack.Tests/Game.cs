@@ -80,18 +80,22 @@ namespace CodeCamp.Blackjack.Tests
 
         private void NextPlayer()
         {
+            if(playerList.All(player => player.Stayed))
+            {
+                State = GameState.Finished;
+                Winner = playerList.Where(o=>o.Score()<=21).OrderByDescending(o => o.Score()).FirstOrDefault();
+                if (Winner == null) 
+                {
+                    Winner = Dealer;
+                }  
+                return;
+            }            
+            
             CurrentPlayerIndex++;
             if (CurrentPlayerIndex >= NumberOfPlayers)
 
                 CurrentPlayerIndex = 0;
-            if(CurrentPlayer.Stayed)
-            {
-                State = GameState.Finished;
-                Winner = playerList.Where(o=>o.Score()<=21).OrderByDescending(o => o.Score()).FirstOrDefault();
-                if (Winner == null) {
-                    Winner = Dealer;
-                }            
-            }
+
         }
     }
 }
